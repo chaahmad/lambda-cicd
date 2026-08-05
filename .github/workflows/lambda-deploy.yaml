@@ -6,7 +6,7 @@ on:
         branches:
             - main
         paths:
-            - 'lambda/'
+            - 'lambda/**'
 jobs:
     Deploy-Lambda: #Names of our job
         runs-on: ubuntu-latest #Sets or specifies the runner
