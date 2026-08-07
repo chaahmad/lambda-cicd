@@ -27,7 +27,7 @@ jobs:
                     aws cloudformation validate-template --template-body file://CloudFormation/S3-bucket.yaml
 
             - name: Deploy our stack
-               run: |
+              run: |
                     stack_name="pr-test-stack-${{github.event.pull_request.number}}"
                     aws cloudformation create-stack --stack-name $stack_name --template-body file://cloudformation/s3-bucket.yaml --parameters ParameterKey=Environment,ParameterValue=test 
 
