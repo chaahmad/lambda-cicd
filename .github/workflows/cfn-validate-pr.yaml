@@ -1,12 +1,12 @@
 name: Validate Cloudformation on PR
 
 on:
-    pull_request:
+    pull-request:
         paths:
             - 'Cloudformation/**'
 
 permissions:
-    pull_requests: write
+    pull-requests: write
     contents: read
 
 jobs:
