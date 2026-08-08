@@ -22,7 +22,7 @@ Resources:
           Value: !Ref Environment
         - Key: Testing
           Value: GitHubActionsTesting
-
+#Setting up outputs
 Outputs:
   BucketName:
     Description: "Name of created S3 bucket"
